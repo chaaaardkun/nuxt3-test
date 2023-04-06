@@ -10,7 +10,8 @@
     "lint": "eslint --ext .ts,.js,.vue ."
   },
   "devDependencies": {
-    "nuxt": "^3.3.3"
+    "nuxt": "^3.3.3",
+    "sass": "^1.60.0"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",

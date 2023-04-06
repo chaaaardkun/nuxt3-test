@@ -1,5 +1,8 @@
-<script setup></script>
+<script setup>
+import Header from '~/components/layout/Header/Header.vue';
+</script>
 
 <template>
-  <div>Hello world asdasd</div>
+  <Header />
+  <div class="container"></div>
 </template>
