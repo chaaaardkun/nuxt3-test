@@ -1,13 +1,22 @@
+<script setup>
+const props = defineProps(['withLabels']);
+</script>
+
 <template>
   <div class="form-check form-switch d-flex gap-3">
-    <p class="form-check-label mr-3 label">Sponsor</p>
+    <p class="form-check-label mr-3 label" v-if="props.withLabels">Sponsor</p>
     <input
       class="form-check-input"
       type="checkbox"
       role="switch"
       id="flexSwitchCheckDefault"
     />
-    <label class="form-check-label" for="flexSwitchCheckDefault">Creator</label>
+    <label
+      class="form-check-label"
+      for="flexSwitchCheckDefault"
+      v-if="props.withLabels"
+      >Creator</label
+    >
   </div>
 </template>
 

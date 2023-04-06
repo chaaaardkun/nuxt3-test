@@ -7,6 +7,7 @@ import ProfileCard from '~/components/templates/ProfileCard.vue';
 import Input from '~/components/ui/Input.vue';
 import DropdownSelect from '~/components/ui/DropdownSelect.vue';
 import UploadWrapper from '~/components/templates/UploadWrapper.vue';
+import Switch from '~/components/ui/Switch.vue';
 </script>
 
 <template>
@@ -21,6 +22,8 @@ import UploadWrapper from '~/components/templates/UploadWrapper.vue';
 
       <div class="col-md-8">
         <section class="section row">
+          <h5 class="section-title">Verify Phone Number</h5>
+          <Switch class="section-switch" />
           <div class="col-6">
             <Input placeholder="Select Country Code" />
           </div>
@@ -30,10 +33,14 @@ import UploadWrapper from '~/components/templates/UploadWrapper.vue';
         </section>
 
         <section class="section mt-4 row">
+          <h5 class="section-title">Verify Email</h5>
+          <Switch class="section-switch" />
           <Input placeholder="Email" class="email" />
         </section>
 
         <section class="section mt-4 row">
+          <h5 class="section-title">Verify Identification</h5>
+          <Switch class="section-switch" />
           <div class="row">
             <div class="d-flex align-items-center gap-2 mb-2">
               <p>Choose an ID Type to add</p>
@@ -96,6 +103,7 @@ import UploadWrapper from '~/components/templates/UploadWrapper.vue';
   border: solid 1px #e8e8f3;
   padding: 1.875rem;
   border-radius: 0.875rem;
+  position: relative;
 }
 
 .email {
@@ -113,5 +121,20 @@ import UploadWrapper from '~/components/templates/UploadWrapper.vue';
   font-size: 0.5rem;
   padding: 0.125rem;
   width: 1.125rem;
+}
+
+.section-switch {
+  position: absolute;
+  top: -13px;
+  right: -87%;
+}
+
+.section-title {
+  font-size: 1rem;
+  position: absolute;
+  top: -12px;
+  background-color: white;
+  width: fit-content;
+  font-weight: 400;
 }
 </style>
