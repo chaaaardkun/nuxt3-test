@@ -10,7 +10,7 @@ import ProgressBar from '~/components/ui/ProgressBar.vue';
       class="container d-flex justify-content-between flex-nowrap align-items-center"
     >
       <Breadcrumbs />
-      <Switch />
+      <Switch :withLabels="true" />
       <ProgressBar />
     </div>
   </div>
