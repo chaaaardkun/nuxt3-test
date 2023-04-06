@@ -3,4 +3,5 @@ export default defineNuxtConfig({
   components: {
     dirs: ['~/components'],
   },
+  css: ['~/assets/styles/main.scss'],
 });
