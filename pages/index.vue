@@ -124,9 +124,10 @@ import Switch from '~/components/ui/Switch.vue';
 }
 
 .section-switch {
+  width: fit-content;
   position: absolute;
   top: -13px;
-  right: -87%;
+  right: 32px;
 }
 
 .section-title {
