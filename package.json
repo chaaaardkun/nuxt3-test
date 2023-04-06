@@ -11,9 +11,12 @@
   },
   "devDependencies": {
     "nuxt": "^3.3.3",
-    "sass": "^1.60.0"
+    "sass": "^1.60.0",
+    "vite-svg-loader": "^4.0.0"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
     "bootstrap": "^5.2.3",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
