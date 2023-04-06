@@ -1,6 +1,8 @@
 <script setup>
 import Header from '~/components/layout/Header.vue';
 import Subheader from '~/components/layout/Subheader.vue';
+import Footer from '~/components/layout/Footer.vue';
+
 import ProfileCard from '~/components/templates/ProfileCard.vue';
 import Input from '~/components/ui/Input.vue';
 import DropdownSelect from '~/components/ui/DropdownSelect.vue';
@@ -75,6 +77,8 @@ import UploadWrapper from '~/components/templates/UploadWrapper.vue';
       </div>
     </div>
   </div>
+
+  <Footer />
 </template>
 
 <style scoped lang="scss">
